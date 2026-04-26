@@ -6,7 +6,7 @@
 #!icon = https://github.com/BiliUniverse/Enhanced/raw/main/src/assets/icon_rounded.png
 #!tag = 🪐 BiliUniverse
 #!system = iOS,iPadOS,macOS,tvOS
-#!date = 2026-04-26 16:56:37
+#!date = 2026-04-26 17:15:30
 #!version = 
 #!system_version = 15
 
@@ -30,6 +30,7 @@ http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\? 
 http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\? requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=馃摵 BiliBili.Enhanced.x.v2.channel.region.list, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
 
 http-response ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=BiliBili.Enhanced.xlive.app.interface.v2.index.feed, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=BiliBili.Enhanced.xlive.app.room.v1.index.getInfoByRoom, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
 
 [MitM]
 hostname = app.bilibili.com, app.biliapi.net, api.live.bilibili.com
