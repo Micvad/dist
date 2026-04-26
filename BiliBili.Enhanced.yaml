@@ -3,11 +3,11 @@ description: |-
   中国站功能增强及UI自定义
 compat_arguments:
   Home.Switch: 'true'
-  Home.Tab: 直播tab,推荐tab,hottopic,bangumi,anime,film,koreavtw
+  Home.Tab: 直播tab,推荐tab,hottopic,bangumi
   Home.Tab_default: 推荐tab
   Home.Top_left: mine
   Home.Top: 消息Top
-  Bottom: home,dynamic,ogv,会员购Bottom,我的Bottom
+  Bottom: home,dynamic,我的Bottom
   Region.Switch: 'true'
   Mine.Switch: 'true'
   Mine.iPad.Switch: 'true'
