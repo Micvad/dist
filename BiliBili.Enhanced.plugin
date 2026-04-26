@@ -1,4 +1,4 @@
-#!name = 📺 BiliBili: ⚙️ Enhanced
+﻿#!name = 📺 BiliBili: ⚙️ Enhanced
 #!desc = 哔哩哔哩：增强模式\n中国站功能增强及UI自定义
 #!openUrl = http://boxjs.com/#/app/BiliBili.Enhanced
 #!author = VirgilClyne[https://github.com/VirgilClyne]
@@ -6,7 +6,7 @@
 #!icon = https://github.com/BiliUniverse/Enhanced/raw/main/src/assets/icon_rounded.png
 #!tag = 🪐 BiliUniverse
 #!system = iOS,iPadOS,macOS,tvOS
-#!date = 2026-04-26 16:20:40
+#!date = 2026-04-26 16:29:51
 #!version = 
 #!system_version = 15
 
@@ -24,12 +24,12 @@ Storage = select,"Argument","PersistentStore","database",tag=[储存] 配置类�
 LogLevel = select,"WARN","OFF","ERROR","INFO","DEBUG","ALL",tag=[调试] 日志等级,desc=选择脚本日志的输出等级，低于所选等级的日志将全部输出。
 
 [Script]
-http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\? requires-body=1, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js, tag=📺 BiliBili.Enhanced.x.resource.show.tab.v2, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
-http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\? requires-body=1, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js, tag=📺 BiliBili.Enhanced.x.v2.account.mine, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
-http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\? requires-body=1, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js, tag=📺 BiliBili.Enhanced.x.v2.region.index, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
-http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\? requires-body=1, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js, tag=📺 BiliBili.Enhanced.x.v2.channel.region.list, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\? requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=馃摵 BiliBili.Enhanced.x.resource.show.tab.v2, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\? requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=馃摵 BiliBili.Enhanced.x.v2.account.mine, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\? requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=馃摵 BiliBili.Enhanced.x.v2.region.index, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\? requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=馃摵 BiliBili.Enhanced.x.v2.channel.region.list, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
 
-http-response ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed requires-body=1, script-path=https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js, tag=BiliBili.Enhanced.xlive.app.interface.v2.index.feed, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
+http-response ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed requires-body=1, script-path=https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js, tag=BiliBili.Enhanced.xlive.app.interface.v2.index.feed, argument=[{Home.Switch},{Home.Tab},{Home.Tab_default},{Home.Top_left},{Home.Top},{Bottom},{Region.Switch},{Mine.Switch},{Mine.iPad.Switch},{Storage},{LogLevel}]
 
 [MitM]
 hostname = app.bilibili.com, app.biliapi.net, api.live.bilibili.com

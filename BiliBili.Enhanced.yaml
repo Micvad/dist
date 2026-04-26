@@ -1,4 +1,3 @@
-name: '📺 BiliBili: ⚙️ Enhanced'
 description: |-
   哔哩哔哩：增强模式
   中国站功能增强及UI自定义
@@ -102,37 +101,37 @@ icon: https://github.com/BiliUniverse/Enhanced/raw/main/src/assets/icon_rounded.
 dns: {}
 scriptings:
 - http_response:
-    name: 📺 BiliBili.Enhanced.x.resource.show.tab.v2
+    name: 馃摵 BiliBili.Enhanced.x.resource.show.tab.v2
     match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\?
-    script_url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+    script_url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     env:
       _compat.$argument: Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
     body_required: true
 - http_response:
-    name: 📺 BiliBili.Enhanced.x.v2.account.mine
+    name: 馃摵 BiliBili.Enhanced.x.v2.account.mine
     match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\?
-    script_url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+    script_url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     env:
       _compat.$argument: Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
     body_required: true
 - http_response:
-    name: 📺 BiliBili.Enhanced.x.v2.region.index
+    name: 馃摵 BiliBili.Enhanced.x.v2.region.index
     match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\?
-    script_url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+    script_url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     env:
       _compat.$argument: Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
     body_required: true
 - http_response:
-    name: 📺 BiliBili.Enhanced.x.v2.channel.region.list
+    name: 馃摵 BiliBili.Enhanced.x.v2.channel.region.list
     match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\?
-    script_url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+    script_url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     env:
       _compat.$argument: Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
     body_required: true
 - http_response:
     name: BiliBili.Enhanced.xlive.app.interface.v2.index.feed
     match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed
-    script_url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+    script_url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     env:
       _compat.$argument: Home.Switch="{{{Home.Switch}}}"&Home.Tab="{{{Home.Tab}}}"&Home.Tab_default="{{{Home.Tab_default}}}"&Home.Top_left="{{{Home.Top_left}}}"&Home.Top="{{{Home.Top}}}"&Bottom="{{{Bottom}}}"&Region.Switch="{{{Region.Switch}}}"&Mine.Switch="{{{Mine.Switch}}}"&Mine.iPad.Switch="{{{Mine.iPad.Switch}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
     body_required: true

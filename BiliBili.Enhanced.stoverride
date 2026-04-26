@@ -1,4 +1,4 @@
-name: "📺 BiliBili: ⚙️ Enhanced"
+﻿name: "📺 BiliBili: ⚙️ Enhanced"
 desc: |-
   哔哩哔哩：增强模式
   中国站功能增强及UI自定义
@@ -8,7 +8,7 @@ author: |-
 homepage: "https://Enhanced.BiliUniverse.io"
 icon: "https://github.com/BiliUniverse/Enhanced/raw/main/src/assets/icon_rounded.png"
 category: "🪐 BiliUniverse"
-date: "2026-04-26 16:20:40"
+date: "2026-04-26 16:29:51"
 version: ""
 
 http:
@@ -18,27 +18,27 @@ http:
     - "api.live.bilibili.com"
   script:
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/resource\/show\/tab\/v2\?
-      name: 📺 BiliBili.Enhanced.response
+      name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\?
-      name: 📺 BiliBili.Enhanced.response
+      name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\?
-      name: 📺 BiliBili.Enhanced.response
+      name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\?
-      name: 📺 BiliBili.Enhanced.response
+      name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
     - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed
-      name: 📺 BiliBili.Enhanced.response
+      name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
 
 script-providers:
-  📺 BiliBili.Enhanced.response:
-    url: https://github.com/BiliUniverse/Enhanced/releases/download/v/response.bundle.js
+  馃摵 BiliBili.Enhanced.response:
+    url: https://raw.githubusercontent.com/Micvad/dist/master/response.bundle.js
     interval: 86400
