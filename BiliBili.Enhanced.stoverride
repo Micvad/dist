@@ -8,7 +8,7 @@ author: |-
 homepage: "https://Enhanced.BiliUniverse.io"
 icon: "https://github.com/BiliUniverse/Enhanced/raw/main/src/assets/icon_rounded.png"
 category: "🪐 BiliUniverse"
-date: "2026-04-26 17:36:16"
+date: "2026-04-26 17:41:23"
 version: ""
 
 http:
@@ -21,22 +21,27 @@ http:
       name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
+      argument: 'Home.Switch="true"&Home.Tab="直播tab,推荐tab,hottopic,bangumi"&Home.Tab_default="推荐tab"&Home.Top_left="mine"&Home.Top="消息Top"&Bottom="home,dynamic,我的Bottom"&Region.Switch="true"&Mine.Switch="true"&Mine.iPad.Switch="true"&Storage="Argument"&LogLevel="WARN"'
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/account\/mine(\/ipad)?\?
       name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
+      argument: 'Home.Switch="true"&Home.Tab="直播tab,推荐tab,hottopic,bangumi"&Home.Tab_default="推荐tab"&Home.Top_left="mine"&Home.Top="消息Top"&Bottom="home,dynamic,我的Bottom"&Region.Switch="true"&Mine.Switch="true"&Mine.iPad.Switch="true"&Storage="Argument"&LogLevel="WARN"'
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/region\/index\?
       name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
+      argument: 'Home.Switch="true"&Home.Tab="直播tab,推荐tab,hottopic,bangumi"&Home.Tab_default="推荐tab"&Home.Top_left="mine"&Home.Top="消息Top"&Bottom="home,dynamic,我的Bottom"&Region.Switch="true"&Mine.Switch="true"&Mine.iPad.Switch="true"&Storage="Argument"&LogLevel="WARN"'
     - match: ^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/channel\/region\/list\?
       name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
+      argument: 'Home.Switch="true"&Home.Tab="直播tab,推荐tab,hottopic,bangumi"&Home.Tab_default="推荐tab"&Home.Top_left="mine"&Home.Top="消息Top"&Bottom="home,dynamic,我的Bottom"&Region.Switch="true"&Mine.Switch="true"&Mine.iPad.Switch="true"&Storage="Argument"&LogLevel="WARN"'
     - match: ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-interface\/v2\/index\/feed
       name: 馃摵 BiliBili.Enhanced.response
       type: response
       require-body: true
+      argument: 'Home.Switch="true"&Home.Tab="直播tab,推荐tab,hottopic,bangumi"&Home.Tab_default="推荐tab"&Home.Top_left="mine"&Home.Top="消息Top"&Bottom="home,dynamic,我的Bottom"&Region.Switch="true"&Mine.Switch="true"&Mine.iPad.Switch="true"&Storage="Argument"&LogLevel="WARN"'
 
 script-providers:
   馃摵 BiliBili.Enhanced.response:
